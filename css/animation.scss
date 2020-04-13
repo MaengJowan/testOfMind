@@ -1,0 +1,21 @@
+@keyframes ltr-fadeout-slide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+}
+@keyframes rtl-fadein-slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@mixin animation($name, $delay, $duration: 0s, $ll: ease) {
+  animation: $name $delay $ll $duration 1 normal forwards;
+}

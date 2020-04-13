@@ -1,0 +1,23 @@
+{
+  "name": "testofmind",
+  "version": "1.0.0",
+  "description": "Trab with testofMind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaengJowan/testOfMind.git"
+  },
+  "author": "maeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaengJowan/testOfMind/issues"
+  },
+  "homepage": "https://github.com/MaengJowan/testOfMind#readme",
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "node-sass": "^4.13.1"
+  }
+}

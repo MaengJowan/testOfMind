@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@-webkit-keyframes ltr-fadeout-slide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 0;
+  }
+}
+@keyframes ltr-fadeout-slide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rtl-fadein-slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes rtl-fadein-slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+* {
+  font-family: "Poor Story", cursive;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  overflow: hidden;
+  font-size: 24px;
+}
+
+#mainPage {
+  background-image: url(../image/backimg.jpg);
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-width: 460px;
+  max-width: 760px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainPage .title {
+  margin-top: 100px;
+}
+
+#mainPage .title p {
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  background: -webkit-gradient(linear, left top, right top, from(#30cfd0), to(#330867));
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#mainPage .title p:first-child {
+  font-weight: 800;
+  font-size: 42px;
+  opacity: 0;
+  -webkit-animation: rtl-fadein-slide 1s ease 0s 1 normal forwards;
+          animation: rtl-fadein-slide 1s ease 0s 1 normal forwards;
+}
+
+#mainPage .title p:last-child {
+  font-weight: 500;
+  font-size: 24px;
+  opacity: 0;
+  -webkit-animation: rtl-fadein-slide 1s ease 0.5s 1 normal forwards;
+          animation: rtl-fadein-slide 1s ease 0.5s 1 normal forwards;
+}
+
+#mainPage .bottomLogo {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#mainPage .bottomLogo a {
+  -webkit-animation: rtl-fadein-slide 1s ease 0s 1 normal forwards;
+          animation: rtl-fadein-slide 1s ease 0s 1 normal forwards;
+  width: 100px;
+}
+
+#mainPage .middle {
+  width: 100%;
+  text-align: center;
+}
+
+#mainPage .middle button {
+  opacity: 0;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#mainPage .middle button.startBtn {
+  width: 300px;
+  background-color: Transparent;
+  border: 5px solid skyblue;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px;
+  border-radius: 15px;
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation: rtl-fadein-slide 1s ease 0.75s 1 normal forwards;
+          animation: rtl-fadein-slide 1s ease 0.75s 1 normal forwards;
+}
+
+#mainPage .middle button:hover {
+  background: skyblue;
+  color: white;
+}
+
+#mainPage #resultPage {
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+#mainPage #loadingPage {
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+}
+
+#mainPage #testPage {
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+  min-width: 460px;
+  max-width: 760px;
+}
+
+#mainPage #testPage .header {
+  margin-top: 30px;
+}
+
+#mainPage #testPage .question {
+  margin-top: 20px;
+}
+
+#mainPage #testPage .answerGroup > div {
+  margin-top: 10px;
+}
+
+#mainPage #testPage .answerGroup > div:hover {
+  background: yellowgreen;
+}
+/*# sourceMappingURL=index.css.map */
