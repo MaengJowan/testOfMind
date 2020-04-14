@@ -35,24 +35,25 @@ let questions = [
 let resultIndex = ["ac", "ad", "bc", "bd"];
 let result = {
   ac: [
-    "한적한 장소",
+    "111111111",
     "<div class='resultMindTitle'>당신의 여행 성향</div><div class='resultMindContent'>당신은 조용한 곳을 좋아하군요!</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'>경남 양산 배내골 - 영남 알프스의 심장부로써 계곡과 산이 어우러져 한적하게 쉴 수 있는 공간<br/>경남 양산 임경대 - 양산 8경으로 한적하지만 멋진 뷰를 자랑함<br/>통영 동피랑 마을 / 서피랑 마을 - 한적하지만 동피랑과 서피랑의 분위가가 약간 다름<br/>울산 작천정계곡 - 캠핑장이 있고, 작천정 근처 야영장이 있어 가족과 분위기 내기 좋음<br/>언양 등억온천 - 진짜 온천 지대, 근처 무인텔 및 숙박시설이 많아 온천과 휴양을 동시에 하기 좋음<br/>경북 보경사 계곡 - 절<br/></div>",
   ],
   ad: [
-    "한적한 장소",
+    "d2222222222",
     "<div class='resultMindTitle'>당신의 여행 성향</div><div class='resultMindContent'>당신은 조용한 곳을 좋아하군요!</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'>경남 양산 배내골 - 영남 알프스의 심장부로써 계곡과 산이 어우러져 한적하게 쉴 수 있는 공간<br/>경남 양산 임경대 - 양산 8경으로 한적하지만 멋진 뷰를 자랑함<br/>통영 동피랑 마을 / 서피랑 마을 - 한적하지만 동피랑과 서피랑의 분위가가 약간 다름<br/>울산 작천정계곡 - 캠핑장이 있고, 작천정 근처 야영장이 있어 가족과 분위기 내기 좋음<br/>언양 등억온천 - 진짜 온천 지대, 근처 무인텔 및 숙박시설이 많아 온천과 휴양을 동시에 하기 좋음<br/>경북 보경사 계곡 - 절<br/></div>",
   ],
   bc: [
-    "한적한 장소",
+    "3333333333",
     "<div class='resultMindTitle'>당신의 여행 성향</div><div class='resultMindContent'>당신은 조용한 곳을 좋아하군요!</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'>경남 양산 배내골 - 영남 알프스의 심장부로써 계곡과 산이 어우러져 한적하게 쉴 수 있는 공간<br/>경남 양산 임경대 - 양산 8경으로 한적하지만 멋진 뷰를 자랑함<br/>통영 동피랑 마을 / 서피랑 마을 - 한적하지만 동피랑과 서피랑의 분위가가 약간 다름<br/>울산 작천정계곡 - 캠핑장이 있고, 작천정 근처 야영장이 있어 가족과 분위기 내기 좋음<br/>언양 등억온천 - 진짜 온천 지대, 근처 무인텔 및 숙박시설이 많아 온천과 휴양을 동시에 하기 좋음<br/>경북 보경사 계곡 - 절<br/></div>",
   ],
   bd: [
-    "한적한 장소",
+    "44444444",
     "<div class='resultMindTitle'>당신의 여행 성향</div><div class='resultMindContent'>당신은 조용한 곳을 좋아하군요!</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'>경남 양산 배내골 - 영남 알프스의 심장부로써 계곡과 산이 어우러져 한적하게 쉴 수 있는 공간<br/>경남 양산 임경대 - 양산 8경으로 한적하지만 멋진 뷰를 자랑함<br/>통영 동피랑 마을 / 서피랑 마을 - 한적하지만 동피랑과 서피랑의 분위가가 약간 다름<br/>울산 작천정계곡 - 캠핑장이 있고, 작천정 근처 야영장이 있어 가족과 분위기 내기 좋음<br/>언양 등억온천 - 진짜 온천 지대, 근처 무인텔 및 숙박시설이 많아 온천과 휴양을 동시에 하기 좋음<br/>경북 보경사 계곡 - 절<br/></div>",
   ],
 };
 function next() {
   let questArray = questions[count];
+  setTimeout(function () {}, 1000);
   if (questArray == null) {
     finishTest();
   } else {
@@ -69,6 +70,10 @@ function next() {
         questArray[3] +
         "</div>"
     );
+    $(".question").css("opacity", "0");
+    $(".question").css("opacity", "1");
+    $(".answerGroup").css("opacity", "0");
+    $(".answerGroup").css("opacity", "1");
     count++;
   }
 }
@@ -90,19 +95,20 @@ function startToTest() {
     "ltr-fadeout-slide 1s ease 0s 1 normal forwards"
   );
   $("#testPage").css("opacity", "0");
-  $("#testPage").css("display", "block");
+  $("#testPage").css("display", "flex");
+  $("#testPage").css("flex-direction", "column");
+
   setTimeout(function () {
+    $(".middle").remove();
     $("#mainPage > .title").remove();
     $("#mainPage > .bottomLogo").remove();
   }, 1000);
   setTimeout(function () {
+    $("#testPage").css("animation-name", "ltr-fadein-slide");
+    $("#testPage").css("animation-delay", "1s");
     $("#testPage").css("opacity", "1");
   }, 1500);
-
   setTimeout(function () {
-    $(".question").css("width", "100%");
-    setTimeout(function () {}, 1000);
-
     next();
   }, 3000);
 }

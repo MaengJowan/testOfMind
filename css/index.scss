@@ -37,7 +37,7 @@ body {
       text-align: center;
       margin-top: 0px;
 
-      background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+      background: linear-gradient(to right, #fff 0%, #30cfd0 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 
@@ -108,9 +108,8 @@ body {
   }
   #testPage {
     opacity: 0;
-    display: none;
-    transition: all 0.5s;
     position: relative;
+    align-items: center;
     left: 0;
     right: 0;
     bottom: 0;
@@ -121,16 +120,41 @@ body {
     min-width: 460px;
     max-width: 760px;
     .header {
-      margin-top: 30px;
+      > img {
+        padding-left: 30px;
+        padding-right: 30px;
+        max-width: 540px;
+        padding-top: 20px;
+      }
     }
-    .question {
+    > .question {
       margin-top: 20px;
+      color: white;
+      transition: all 0.5s;
+      opacity: 0;
+      animation-delay: 3s;
+      max-width: 650px;
+      font-size: 32px;
     }
-    .answerGroup {
-      > div {
-        margin-top: 10px;
+    > .answerGroup {
+      padding-top: 20px;
+      transition: all 0.5s ease-in-out;
+      opacity: 0;
+      height: 0;
+      cursor: pointer;
+      .answer {
+        color: white;
+        margin-top: 20px;
+        border: 3px solid white;
+        padding: 5px 10px 5px 10px;
+        border-radius: 52px;
         &:hover {
-          background: yellowgreen;
+          transition: all 0.2s ease-in-out;
+          @include animation(btn-color, 1s);
+          transform: scale(1.1);
+        }
+        &:active {
+          @include animation(btn-click, 1s);
         }
       }
     }
