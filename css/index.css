@@ -130,7 +130,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: center;
-  min-width: 460px;
+  min-width: 320px;
   max-width: 760px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -257,13 +257,12 @@ body {
   text-align: center;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  min-width: 460px;
+  min-width: 320px;
   max-width: 760px;
 }
 
 #mainPage #testPage .header > img {
-  padding-left: 30px;
-  padding-right: 30px;
+  width: 100%;
   max-width: 540px;
   padding-top: 20px;
 }
@@ -295,6 +294,8 @@ body {
   border: 3px solid white;
   padding: 5px 10px 5px 10px;
   border-radius: 52px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 #mainPage #testPage > .answerGroup .answer:hover {
