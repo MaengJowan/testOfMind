@@ -1,7 +1,7 @@
 @import "animation";
-@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
 * {
-  font-family: "Poor Story", cursive;
+  font-family: "Roboto", sans-serif;
 }
 html,
 body {
@@ -30,7 +30,7 @@ body {
   align-items: center;
 
   .title {
-    margin-top: 100px;
+    margin-top: 20px;
 
     p {
       width: 100%;
@@ -99,10 +99,17 @@ body {
     display: none;
     transition: all 0.5s;
     position: relative;
+    > div {
+      margin-bottom: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
   #loadingPage {
     opacity: 0;
+    padding-top: 50px;
     display: none;
+    color: white;
     transition: all 0.5s;
     position: relative;
   }
@@ -121,7 +128,7 @@ body {
     max-width: 760px;
     .header {
       > img {
-        width: 100%;
+        width: 90%;
         max-width: 540px;
         padding-top: 20px;
       }
@@ -133,22 +140,27 @@ body {
       opacity: 0;
       animation-delay: 3s;
       max-width: 650px;
-      font-size: 32px;
+      font-size: 20px;
+      text-align: left;
+      width: 90%;
     }
     > .answerGroup {
       padding-top: 20px;
       transition: all 0.5s ease-in-out;
       opacity: 0;
       height: 0;
+      text-align: center;
+      width: 90%;
+      font-size: 20px;
+
       cursor: pointer;
       .answer {
         color: white;
         margin-top: 20px;
         border: 3px solid white;
-        padding: 5px 10px 5px 10px;
+        padding: 10px 40px 10px 40px;
         border-radius: 52px;
         margin-top: 20px;
-        margin-left: 20px;
         &:hover {
           transition: all 0.2s ease-in-out;
           @include animation(btn-color, 1s);
@@ -157,6 +169,47 @@ body {
         &:active {
           @include animation(btn-click, 1s);
         }
+      }
+    }
+  }
+  #resultPage {
+    color: whitesmoke;
+    .title,
+    .resultMindContent,
+    .resultTravelTitle,
+    .resultTravelContent {
+      border: 3px solid whitesmoke;
+      border-radius: 5px;
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .resultMindContent,
+    .resultTravelContent {
+      text-align: left;
+      font-size: 20px;
+      ul {
+        margin: auto;
+        display: inline-block;
+      }
+    }
+    .resultMindContent {
+      padding: 20px 10px 20px 10px;
+    }
+    .resultTravelContent {
+      margin: 10px 10px 10px 10px;
+    }
+    .title,
+    .resultTravelTitle,
+    .resultMindTitle {
+      font-weight: 700;
+      text-align: center;
+      font-size: 24px;
+    }
+    .resultMindTitle {
+      img {
+        max-width: 360px;
+        width: 90%;
       }
     }
   }

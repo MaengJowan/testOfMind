@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap");
 @-webkit-keyframes ltr-fadeout-slide {
   0% {
     opacity: 1;
@@ -109,7 +109,7 @@
 }
 
 * {
-  font-family: "Poor Story", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -148,7 +148,7 @@ body {
 }
 
 #mainPage .title {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 #mainPage .title p {
@@ -235,9 +235,17 @@ body {
   position: relative;
 }
 
+#mainPage #resultPage > div {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 #mainPage #loadingPage {
   opacity: 0;
+  padding-top: 50px;
   display: none;
+  color: white;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: relative;
@@ -262,7 +270,7 @@ body {
 }
 
 #mainPage #testPage .header > img {
-  width: 100%;
+  width: 90%;
   max-width: 540px;
   padding-top: 20px;
 }
@@ -276,7 +284,9 @@ body {
   -webkit-animation-delay: 3s;
           animation-delay: 3s;
   max-width: 650px;
-  font-size: 32px;
+  font-size: 20px;
+  text-align: left;
+  width: 90%;
 }
 
 #mainPage #testPage > .answerGroup {
@@ -285,6 +295,9 @@ body {
   transition: all 0.5s ease-in-out;
   opacity: 0;
   height: 0;
+  text-align: center;
+  width: 90%;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -292,10 +305,9 @@ body {
   color: white;
   margin-top: 20px;
   border: 3px solid white;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 40px 10px 40px;
   border-radius: 52px;
   margin-top: 20px;
-  margin-left: 20px;
 }
 
 #mainPage #testPage > .answerGroup .answer:hover {
@@ -310,5 +322,52 @@ body {
 #mainPage #testPage > .answerGroup .answer:active {
   -webkit-animation: btn-click 1s ease 0s 1 normal forwards;
           animation: btn-click 1s ease 0s 1 normal forwards;
+}
+
+#mainPage #resultPage {
+  color: whitesmoke;
+}
+
+#mainPage #resultPage .title,
+#mainPage #resultPage .resultMindContent,
+#mainPage #resultPage .resultTravelTitle,
+#mainPage #resultPage .resultTravelContent {
+  border: 3px solid whitesmoke;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#mainPage #resultPage .resultMindContent,
+#mainPage #resultPage .resultTravelContent {
+  text-align: left;
+  font-size: 20px;
+}
+
+#mainPage #resultPage .resultMindContent ul,
+#mainPage #resultPage .resultTravelContent ul {
+  margin: auto;
+  display: inline-block;
+}
+
+#mainPage #resultPage .resultMindContent {
+  padding: 20px 10px 20px 10px;
+}
+
+#mainPage #resultPage .resultTravelContent {
+  margin: 10px 10px 10px 10px;
+}
+
+#mainPage #resultPage .title,
+#mainPage #resultPage .resultTravelTitle,
+#mainPage #resultPage .resultMindTitle {
+  font-weight: 700;
+  text-align: center;
+  font-size: 24px;
+}
+
+#mainPage #resultPage .resultMindTitle img {
+  max-width: 360px;
+  width: 90%;
 }
 /*# sourceMappingURL=index.css.map */
