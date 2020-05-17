@@ -265,10 +265,15 @@ body {
   top: 0;
   width: 100%;
   text-align: center;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   min-width: 320px;
   max-width: 760px;
+}
+
+#mainPage #testPage .header {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 #mainPage #testPage .header > img {
@@ -283,8 +288,6 @@ body {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   opacity: 0;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
   max-width: 650px;
   font-size: 20px;
   text-align: left;
@@ -293,8 +296,8 @@ body {
 
 #mainPage #testPage > .answerGroup {
   padding-top: 20px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   opacity: 0;
   height: 0;
   text-align: center;
@@ -371,5 +374,59 @@ body {
 #mainPage #resultPage .resultMindTitle img {
   max-width: 360px;
   width: 90%;
+}
+
+#mainPage .trab .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#mainPage .trab .button-container button:first-child {
+  margin-right: 10px;
+}
+
+#mainPage .trab .button-container .button {
+  cursor: pointer;
+  background-color: #008cba;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#mainPage .trab p {
+  text-align: center;
+}
+
+#mainPage .trab .info p {
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 3px 5px 3px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+#mainPage .trab .info p a:link {
+  color: black;
+  text-decoration: none;
+}
+
+#mainPage .trab .info p a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#mainPage .trab .info p a:hover {
+  color: black;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=index.css.map */

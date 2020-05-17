@@ -124,7 +124,6 @@ let result = {
 };
 function next() {
   let questArray = questions[count];
-  setTimeout(function () {}, 1000);
   if (questArray == null) {
     finishTest();
   } else {
@@ -141,16 +140,19 @@ function next() {
         questArray[3] +
         "</div>"
     );
-
-    $(".question").css("opacity", "0");
-    $(".question").css("opacity", "1");
-    $(".answerGroup").css("opacity", "0");
-    $(".answerGroup").css("opacity", "1");
+    //testPage fade in
     count++;
     $(".header").html(`<img src='image/list${count}.jpg' />`);
+    $(".header").css("opacity", "1");
+    $(".question").css("opacity", "1");
+    $(".answerGroup").css("opacity", "1");
+    setTimeout(function () {
+      $("#testPage").css("opacity", "1");
+    }, 2000);
   }
 }
 let start = false;
+
 function startToTest() {
   if (start) return;
 
@@ -160,6 +162,8 @@ function startToTest() {
   $(".title > p").css("animation-name", "ltr-fadeout-slide");
   $(".title > p").css("animation-delay", "0s");
 
+  $(".middle > .bottomLogo").css("opacity", "1");
+  $(".middle > .bottomLogo").css("animation-name", "ltr-fadeout-slide");
   $(".middle > .bottomLogo").css("opacity", "0");
 
   $(".startBtn").css("opacity", "1");
@@ -167,6 +171,7 @@ function startToTest() {
     "animation",
     "ltr-fadeout-slide 1s ease 0s 1 normal forwards"
   );
+  $("#mainPage > .bottomLogo").css("opacity", "0");
   $("#testPage").css("opacity", "0");
   $("#testPage").css("display", "flex");
   $("#testPage").css("flex-direction", "column");
@@ -182,29 +187,33 @@ function startToTest() {
     $("#testPage").css("opacity", "1");
   }, 1500);
   setTimeout(function () {
+    $(".question").css("opacity", "1");
+    $(".answerGroup").css("opacity", "1");
     next();
-  }, 3000);
+  }, 2000);
 }
 
 function selectAnswer(tendency) {
   list.push(tendency);
-  console.log("list : " + list);
 
-  $(".answerGroup > div").css("opacity", "1");
-  $(".answerGroup > div").css("width", "100%");
-  $(".answer").css(
-    "animation",
-    "ltr-fadeout-slide 1s ease 0s 1 normal forwards"
-  );
+  //선택하면 사라짐
+  $(".question").css("opacity", "0");
+  $(".answerGroup").css("opacity", "0");
+  $(".header").css("opacity", "0");
 
-  next();
+  setTimeout(function () {
+    //요소 투명도 0
+    $("#testPage").css("opacity", "0");
+  }, 500);
+
+  setTimeout(function () {
+    next();
+  }, 1500);
 }
 
 function finishTest() {
-  $(".question").text("");
   $(".question").css("opacity", 1);
   $(".question").css("opacity", "0");
-  $(".answerGroup").text("");
   $(".answerGroup").css("opacity", 1);
   $(".answerGroup").css("opacity", "0");
   $(".header").css("opacity", "1");
@@ -239,6 +248,6 @@ function setResult() {
       set[0] +
       "</div>" +
       set[1] +
-      "<div class='trab'></div>"
+      "<div class='trab'><div class='button-container'><button class='button' onclick='location.reload()''>다시하기</button><button class='button' onclick='self.close()'>그만하기</button></div><div class='info'><div><p>더 많은 여행정보를 알고 싶으시면?</p></div><div><a href='http://trab.co.kr'><p><i class='fas fa-home'></i>Trab.co.kr</p></a><a href='https://www.youtube.com/channel/UCWBlmEW8cq3CM2fGGNYH4gA'><p><i class='fab fa-youtube'></i>Trab Youtube</p></a><a href='https://instagram.com/trab_insta?igshid=u0xr9ldg0pj3'><p><i class='fab fa-instagram'></i>Trab instagram</p></a></div></div></div></div>"
   );
 }
