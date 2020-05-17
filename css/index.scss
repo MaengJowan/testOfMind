@@ -95,10 +95,12 @@ body {
     }
   }
   #resultPage {
+    height: 100%;
     opacity: 0;
     display: none;
     transition: all 0.5s;
     position: relative;
+    overflow-y: scroll;
     > div {
       margin-bottom: 10px;
       margin-left: 10px;

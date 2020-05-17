@@ -228,11 +228,13 @@ body {
 }
 
 #mainPage #resultPage {
+  height: 100%;
   opacity: 0;
   display: none;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: relative;
+  overflow-y: scroll;
 }
 
 #mainPage #resultPage > div {
