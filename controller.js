@@ -148,7 +148,7 @@ function next() {
     $(".answerGroup").css("opacity", "1");
     setTimeout(function () {
       $("#testPage").css("opacity", "1");
-    }, 2000);
+    }, 2100);
   }
 }
 let start = false;
@@ -174,23 +174,19 @@ function startToTest() {
   $("#testPage").css("opacity", "0");
   $("#testPage").css("display", "flex");
   $("#testPage").css("flex-direction", "column");
-
+  $(".question").css("opacity", "1");
+  $(".answerGroup").css("opacity", "1");
   setTimeout(function () {
     $(".middle").remove();
     $("#mainPage > .title").remove();
     $("#mainPage > .bottomLogo").remove();
-    $(".img > img").css("opcacity", "1");
   }, 1000);
   setTimeout(function () {
     $("#testPage").css("animation-name", "ltr-fadein-slide");
     $("#testPage").css("animation-delay", "1s");
     $("#testPage").css("opacity", "1");
-  }, 1500);
-  setTimeout(function () {
-    $(".question").css("opacity", "1");
-    $(".answerGroup").css("opacity", "1");
     next();
-  }, 2000);
+  }, 1100);
 }
 
 function selectAnswer(tendency) {
