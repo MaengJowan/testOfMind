@@ -116,7 +116,7 @@ dist
 
 package-lock.json
 index.css.map
+animation.css.map
 index.scss
 main.css
-animation.css.map
 animation.scss

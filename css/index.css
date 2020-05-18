@@ -123,8 +123,8 @@ body {
   font-size: 24px;
 }
 
-html .img,
-body .img {
+html .img-container,
+body .img-container {
   position: absolute;
   pointer-events: none;
   top: 90%;
@@ -136,10 +136,8 @@ body .img {
   z-index: 1;
 }
 
-html .img img,
-body .img img {
-  zoom: 1;
-  filter: alpha(opacity=50);
+html .img-container img,
+body .img-container img {
   opacity: 0.5;
   width: 20%;
   max-width: 100px;
@@ -434,6 +432,17 @@ body .img img {
   text-align: center;
 }
 
+#mainPage .trab .info button {
+  border: none;
+  padding: 7px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 #mainPage .trab .info p {
   border: 2px solid white;
   border-radius: 5px;
@@ -455,16 +464,5 @@ body .img img {
 #mainPage .trab .info p a:hover {
   color: black;
   text-decoration: underline;
-}
-
-#mainPage .trab .info p .clipboard {
-  border: none;
-  padding: 7px;
-  width: 100%;
-  border-radius: 5px;
-  background-color: whitesmoke;
-  font-size: 24px;
-  font-weight: 700;
-  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */
