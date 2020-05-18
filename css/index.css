@@ -127,21 +127,20 @@ html .img,
 body .img {
   position: absolute;
   pointer-events: none;
-  top: 80%;
+  top: 90%;
   left: 50%;
   text-align: center;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  opacity: 50%;
+  opacity: 30%;
   z-index: 1;
 }
 
 html .img img,
 body .img img {
   width: 20%;
+  max-width: 100px;
 }
 
 #mainPage {

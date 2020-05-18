@@ -115,3 +115,8 @@ dist
 .pnp.*
 
 package-lock.json
+index.css.map
+index.scss
+main.css
+animation.css.map
+animation.css
