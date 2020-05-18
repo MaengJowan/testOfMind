@@ -171,7 +171,6 @@ function startToTest() {
     "animation",
     "ltr-fadeout-slide 1s ease 0s 1 normal forwards"
   );
-  $("#mainPage > .bottomLogo").css("opacity", "0");
   $("#testPage").css("opacity", "0");
   $("#testPage").css("display", "flex");
   $("#testPage").css("flex-direction", "column");
@@ -180,6 +179,7 @@ function startToTest() {
     $(".middle").remove();
     $("#mainPage > .title").remove();
     $("#mainPage > .bottomLogo").remove();
+    $(".img > img").css("opcacity", "1");
   }, 1000);
   setTimeout(function () {
     $("#testPage").css("animation-name", "ltr-fadein-slide");
@@ -236,7 +236,7 @@ function finishTest() {
     setResult();
   }, 5000);
 }
-
+const link = "https://maengjowan.github.io/testOfMind/";
 function setResult() {
   let character = list[1] + list[2] + list[3] + list[4];
   console.log("character : " + character);
@@ -248,6 +248,19 @@ function setResult() {
       set[0] +
       "</div>" +
       set[1] +
-      "<div class='trab'><div class='button-container'><button class='button' onclick='location.reload()''>다시하기</button><button class='button' onclick='self.close()'>그만하기</button></div><div class='info'><div><p>더 많은 여행정보를 알고 싶으시면?</p></div><div><a href='http://trab.co.kr'><p><i class='fas fa-home'></i>Trab.co.kr</p></a><a href='https://www.youtube.com/channel/UCWBlmEW8cq3CM2fGGNYH4gA'><p><i class='fab fa-youtube'></i>Trab Youtube</p></a><a href='https://instagram.com/trab_insta?igshid=u0xr9ldg0pj3'><p><i class='fab fa-instagram'></i>Trab instagram</p></a></div></div></div></div>"
+      "<div class='trab'><div class='button-container'><button class='button' onclick='location.reload()''>다시하기</button><button class='button' onclick='self.close()'>그만하기</button></div><div class='info'><div><p>더 많은 여행정보를 알고 싶으시면?</p></div><div><a href='http://trab.co.kr'><p><i class='fas fa-home'></i>Trab.co.kr</p></a><button class='btn clipboard' id='clipboard' data-clipboard-text='https://maengjowan.github.io/testOfMind/'>링크 공유하기</button><a href='https://www.youtube.com/channel/UCWBlmEW8cq3CM2fGGNYH4gA'><p><i class='fab fa-youtube'></i>Trab Youtube</p></a><a href='https://instagram.com/trab_insta?igshid=u0xr9ldg0pj3'><p><i class='fab fa-instagram'></i>Trab instagram</p></a></div></div></div></div>"
   );
+  
+  document.getElementById('clipboard').addEventListener("click", clipboard());
+}
+function clipboard(){
+  var btn = new Clipboard(".clipboard");
+    btn.on('success', function(e) {
+        console.log(e);
+        confirm("클립보드에 복사되었습니다.");
+    });
+    btn.on('error', function(e) {
+      console.log(e);
+      alert("Ctrl + C 를 누르면 복사가 완료됩니다.");
+    });
 }
