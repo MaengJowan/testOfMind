@@ -133,12 +133,12 @@ body .img {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 100%;
-  opacity: 30%;
   z-index: 1;
 }
 
 html .img img,
 body .img img {
+  opacity: 30%;
   width: 20%;
   max-width: 100px;
 }
