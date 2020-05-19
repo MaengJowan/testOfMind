@@ -303,7 +303,7 @@ body .img-container img {
 #mainPage #testPage .header > img {
   pointer-events: none;
   width: 90%;
-  max-width: 540px;
+  max-width: 275px;
   padding-top: 20px;
 }
 
@@ -364,14 +364,14 @@ body .img-container img {
 #mainPage #resultPage .resultTravelContent {
   border: 3px solid whitesmoke;
   border-radius: 5px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #mainPage #resultPage .resultMindContent,
 #mainPage #resultPage .resultTravelContent {
   text-align: left;
-  font-size: 20px;
 }
 
 #mainPage #resultPage .resultMindContent ul,
@@ -393,7 +393,6 @@ body .img-container img {
 #mainPage #resultPage .resultMindTitle {
   font-weight: 700;
   text-align: center;
-  font-size: 24px;
 }
 
 #mainPage #resultPage .resultMindTitle img {
@@ -420,12 +419,12 @@ body .img-container img {
   background-color: #008cba;
   /* Green */
   border: none;
+  border-radius: 5px;
   color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
 }
 
 #mainPage .trab p {
@@ -438,12 +437,16 @@ body .img-container img {
   width: 100%;
   border-radius: 5px;
   background-color: whitesmoke;
-  font-size: 24px;
   font-weight: 700;
   cursor: pointer;
 }
 
+#mainPage .trab .info div > p {
+  font-size: 16px;
+}
+
 #mainPage .trab .info p {
+  font-size: 16px;
   border: 2px solid white;
   border-radius: 5px;
   padding: 5px 3px 5px 3px;
