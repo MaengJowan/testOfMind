@@ -381,7 +381,7 @@ body .img-container img {
 }
 
 #mainPage #resultPage .resultMindContent {
-  padding: 20px 10px 20px 10px;
+  padding: 10px 10px 10px 10px;
 }
 
 #mainPage #resultPage .resultTravelContent {
@@ -425,6 +425,10 @@ body .img-container img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+#mainPage .trab a {
+  text-decoration: none;
 }
 
 #mainPage .trab p {

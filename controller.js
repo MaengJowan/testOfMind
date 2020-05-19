@@ -59,15 +59,15 @@ let resultIndex = [
 let result = {
   aaaa: [
     "아싸인척하는 인싸",
-    "<div class='resultMindTitle'><img src='./image/aaaa.jpg' alt='image'/></div><div class='resultMindContent'>혼자있기를 좋아하는 당신 그러나 당신주변에는 항상 친구들이 가득하군요. 혼자서도 잘노는 당신을 위해 혼자라도 새로운 도전을 할 수 있는 관광지를 추천합니다. 꽉찬 스케줄과 신나는 액티비티를 할 준비가 되셨나요?</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'><ul><li>대천(짚라인,스카이바이크)</li> <li>단양(패러글라이딩)</li> <li>제주도(한라산)</li> <li>전주(한옥마을)</li> <li>강화도(루지)</li></ul><br/></div>",
+    "<div class='resultMindTitle'><img src='./image/aaaa.jpg' alt='image'/></div><div class='resultMindContent'>혼자있기를 좋아하는 당신 그러나 당신주변에는 항상 친구들이 가득하군요. 혼자서도 잘노는 당신을 위해 혼자라도 새로운 도전을 할 수 있는 관광지를 추천합니다. 꽉찬 스케줄과 신나는 액티비티를 할 준비가 되셨나요?</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'><ul><li>대천(짚라인,스카이바이크)</li> <li>단양(패러글라이딩)</li> <li>제주도(한라산)</li> <li>전주(한옥마을)</li> <li>강화도(루지)</li></ul></div>",
   ],
   aaab: [
     "시간은 금이다",
-    "<div class='resultMindTitle'><img src='./image/aaab.jpg' alt='image'/></div><div class='resultMindContent'>당신은 혼자있을때도 시간을 헛으로 쓰는 법이 없네요. 집에서도 밖에서도 항상 일을 벌이며 새로운 것을 추구합니다. 항상 새로운 것을 추구해 앞으로도 하고 싶은게 많은 당신을 위한 여행지를 추천합니다.</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'><ul><li>강원도 홍천(알파카월드)</li> <li>춘천 강촌(구곡폭포)</li> <li>창녕(우포늪)</li> <li>영덕(블루로드, 1코스 5시간)</li> <li>영천별빛마을(패러글라이딩, 별자리)</li> <li>충북제천청풍랜드</li> </ul><br/></div>",
+    "<div class='resultMindTitle'><img src='./image/aaab.jpg' alt='image'/></div><div class='resultMindContent'>당신은 혼자있을때도 시간을 헛으로 쓰는 법이 없네요. 집에서도 밖에서도 항상 일을 벌이며 새로운 것을 추구합니다. 항상 새로운 것을 추구해 앞으로도 하고 싶은게 많은 당신을 위한 여행지를 추천합니다.</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'><ul><li>강원도 홍천(알파카월드)</li> <li>춘천 강촌(구곡폭포)</li> <li>창녕(우포늪)</li> <li>영덕(블루로드, 1코스 5시간)</li> <li>영천별빛마을(패러글라이딩, 별자리)</li> <li>충북제천청풍랜드</li> </ul></div>",
   ],
   aaba: [
     "걸어다니는 백과사전",
-    "<div class='resultMindTitle'><img src='./image/aaba.jpg' alt='image'/></div><div class='resultMindContent'>이것저것 잡다한 지식을 많이 알고 있는 당신은 새로운 것을 배우고 알아가는 것을 좋아합니다. 당신의 지식은 많은 사람들이 문제를 해결하는것에도 도움을 주네요. 세상은 아직도 배울게 많습니다. 여행을 통해 새로운지식을 습득해보는 것은 어떨까요?</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'><br/><ul><li>경주(보문단지)</li> <li>공주(공산성, 국립공주박물관)</li> <li>고성(공룡발자국)</li> <li>부여(백제문화단지)</li> <li>군산(근대문화유산마을)</li> </ul></div>",
+    "<div class='resultMindTitle'><img src='./image/aaba.jpg' alt='image'/></div><div class='resultMindContent'>이것저것 잡다한 지식을 많이 알고 있는 당신은 새로운 것을 배우고 알아가는 것을 좋아합니다. 당신의 지식은 많은 사람들이 문제를 해결하는것에도 도움을 주네요. 세상은 아직도 배울게 많습니다. 여행을 통해 새로운지식을 습득해보는 것은 어떨까요?</div><div class='resultTravelTitle'>당신의 맞춤 여행지</div><div class='resultTravelContent'><ul><li>경주(보문단지)</li> <li>공주(공산성, 국립공주박물관)</li> <li>고성(공룡발자국)</li> <li>부여(백제문화단지)</li> <li>군산(근대문화유산마을)</li> </ul></div>",
   ],
   abaa: [
     "신선놀음형",
