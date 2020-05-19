@@ -183,7 +183,7 @@ body .img-container img {
 
 #mainPage .title p:first-child {
   font-weight: 800;
-  font-size: 8vmin;
+  font-size: 32px;
   opacity: 0;
   -webkit-animation: rtl-fadein-slide 1s ease 0s 1 normal forwards;
           animation: rtl-fadein-slide 1s ease 0s 1 normal forwards;
